@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9d4d4; /* Soft pink background */
+    color: #ff6f61; /* Soft red text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #yesButton {
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  #noButton {
+    background-color: #ffffff;
+    color: #ff6f61;
+    border: 2px solid #ff6f61;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #celebration {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #ff6f61;
+    animation: celebration 2s infinite;
+  }
+  
+  @keyframes celebration {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  /* Heart Rain Animation */
+body {
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6f61;
+  top: -50px;
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(-45deg);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+/* Heart Rain Animation */
+body {
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6f61;
+    top: -50px;
+    border-radius: 50% 50% 0 50%;
+    transform: rotate(-45deg);
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-50px) rotate(-45deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(-45deg);
+      opacity: 0;
+    }
+  }
+
+  button:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .cursor-heart {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeOut 0.5s ease forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Flower Styles */
+.flower {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  
